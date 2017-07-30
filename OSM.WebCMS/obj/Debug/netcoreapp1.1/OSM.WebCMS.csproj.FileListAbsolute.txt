@@ -1,0 +1,6 @@
+H:\Projects\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.deps.json
+H:\Projects\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.runtimeconfig.json
+H:\Projects\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.runtimeconfig.dev.json
+H:\Projects\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.csprojResolveAssemblyReference.cache
+H:\Projects\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+H:\Projects\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.AssemblyInfo.cs

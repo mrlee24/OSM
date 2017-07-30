@@ -1,0 +1,9 @@
+H:\Projects\OSM\OSM.Data\bin\Debug\netcoreapp1.1\OSM.Data.deps.json
+H:\Projects\OSM\OSM.Data\bin\Debug\netcoreapp1.1\OSM.Data.dll
+H:\Projects\OSM\OSM.Data\bin\Debug\netcoreapp1.1\OSM.Model.dll
+H:\Projects\OSM\OSM.Data\bin\Debug\netcoreapp1.1\OSM.Model.pdb
+H:\Projects\OSM\OSM.Data\bin\Debug\netcoreapp1.1\OSM.Data.pdb
+H:\Projects\OSM\OSM.Data\obj\Debug\netcoreapp1.1\OSM.Data.csprojResolveAssemblyReference.cache
+H:\Projects\OSM\OSM.Data\obj\Debug\netcoreapp1.1\OSM.Data.AssemblyInfo.cs
+H:\Projects\OSM\OSM.Data\obj\Debug\netcoreapp1.1\OSM.Data.dll
+H:\Projects\OSM\OSM.Data\obj\Debug\netcoreapp1.1\OSM.Data.pdb
