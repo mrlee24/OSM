@@ -17,30 +17,27 @@ namespace OSM.WebCMS.Infrastructure.Core
         {
             this._errorService = errorService;
         }
-
-        /*
+        
         protected HttpResponseMessage CreateHttpResponse(HttpRequestMessage requestMessage, Func<HttpResponseMessage> function)
         {
-            HttpResponseMessage response = null;
+            HttpResponseMessage requestMessage = null;
             try
             {
-                response = function.Invoke();
+                requestMessage = function.Invoke();
             }
             catch (DbUpdateException dbEx)
             {
                 LogError(dbEx);
-                response = response.CreateResponse(HttpStatusCode.BadRequest, dbEx.InnerException.Message);
+                //requestMessage = requestMessage.CreateResponse(HttpStatusCode.BadRequest, dbEx.InnerException.Message);
+                return BadRequest(ModelState);
             }
             catch (Exception ex)
             {
                 LogError(ex);
                 //response = requestMessage.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
             }
-            return response;
-        }
-        */
-
-        
+            return requestMessage;
+        } 
 
         private void LogError(Exception ex)
         {

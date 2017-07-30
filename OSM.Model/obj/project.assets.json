@@ -8789,10 +8789,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Projects\\OSM\\OSM.Model\\OSM.Model.csproj",
+      "projectUniqueName": "H:\\Project\\OSM\\OSM.Model\\OSM.Model.csproj",
       "projectName": "OSM.Model",
-      "projectPath": "H:\\Projects\\OSM\\OSM.Model\\OSM.Model.csproj",
-      "outputPath": "H:\\Projects\\OSM\\OSM.Model\\obj\\",
+      "projectPath": "H:\\Project\\OSM\\OSM.Model\\OSM.Model.csproj",
+      "outputPath": "H:\\Project\\OSM\\OSM.Model\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

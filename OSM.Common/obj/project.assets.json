@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Projects\\OSM\\OSM.Common\\OSM.Common.csproj",
+      "projectUniqueName": "H:\\Project\\OSM\\OSM.Common\\OSM.Common.csproj",
       "projectName": "OSM.Common",
-      "projectPath": "H:\\Projects\\OSM\\OSM.Common\\OSM.Common.csproj",
-      "outputPath": "H:\\Projects\\OSM\\OSM.Common\\obj\\",
+      "projectPath": "H:\\Project\\OSM\\OSM.Common\\OSM.Common.csproj",
+      "outputPath": "H:\\Project\\OSM\\OSM.Common\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

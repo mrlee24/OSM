@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSM.Data", "OSM.Data\OSM.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSM.Service", "OSM.Service\OSM.Service.csproj", "{5B783793-6CCB-4448-AAE3-CFF165DB13DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSM.WebCMS", "OSM.WebCMS\OSM.WebCMS.csproj", "{ADB6DA6D-587D-4B63-8303-3607E4B19352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSM.WebCMS", "OSM.WebCMS\OSM.WebCMS.csproj", "{ADB6DA6D-587D-4B63-8303-3607E4B19352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

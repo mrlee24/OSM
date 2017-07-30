@@ -8867,10 +8867,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Projects\\OSM\\OSM.Data\\OSM.Data.csproj",
+      "projectUniqueName": "H:\\Project\\OSM\\OSM.Data\\OSM.Data.csproj",
       "projectName": "OSM.Data",
-      "projectPath": "H:\\Projects\\OSM\\OSM.Data\\OSM.Data.csproj",
-      "outputPath": "H:\\Projects\\OSM\\OSM.Data\\obj\\",
+      "projectPath": "H:\\Project\\OSM\\OSM.Data\\OSM.Data.csproj",
+      "outputPath": "H:\\Project\\OSM\\OSM.Data\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -8878,8 +8878,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "H:\\Projects\\OSM\\OSM.Model\\OSM.Model.csproj": {
-              "projectPath": "H:\\Projects\\OSM\\OSM.Model\\OSM.Model.csproj"
+            "H:\\Project\\OSM\\OSM.Model\\OSM.Model.csproj": {
+              "projectPath": "H:\\Project\\OSM\\OSM.Model\\OSM.Model.csproj"
             }
           }
         }

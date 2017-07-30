@@ -8894,10 +8894,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Projects\\OSM\\OSM.Service\\OSM.Service.csproj",
+      "projectUniqueName": "H:\\Project\\OSM\\OSM.Service\\OSM.Service.csproj",
       "projectName": "OSM.Service",
-      "projectPath": "H:\\Projects\\OSM\\OSM.Service\\OSM.Service.csproj",
-      "outputPath": "H:\\Projects\\OSM\\OSM.Service\\obj\\",
+      "projectPath": "H:\\Project\\OSM\\OSM.Service\\OSM.Service.csproj",
+      "outputPath": "H:\\Project\\OSM\\OSM.Service\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -8905,14 +8905,14 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "H:\\Projects\\OSM\\OSM.Common\\OSM.Common.csproj": {
-              "projectPath": "H:\\Projects\\OSM\\OSM.Common\\OSM.Common.csproj"
+            "H:\\Project\\OSM\\OSM.Common\\OSM.Common.csproj": {
+              "projectPath": "H:\\Project\\OSM\\OSM.Common\\OSM.Common.csproj"
             },
-            "H:\\Projects\\OSM\\OSM.Data\\OSM.Data.csproj": {
-              "projectPath": "H:\\Projects\\OSM\\OSM.Data\\OSM.Data.csproj"
+            "H:\\Project\\OSM\\OSM.Data\\OSM.Data.csproj": {
+              "projectPath": "H:\\Project\\OSM\\OSM.Data\\OSM.Data.csproj"
             },
-            "H:\\Projects\\OSM\\OSM.Model\\OSM.Model.csproj": {
-              "projectPath": "H:\\Projects\\OSM\\OSM.Model\\OSM.Model.csproj"
+            "H:\\Project\\OSM\\OSM.Model\\OSM.Model.csproj": {
+              "projectPath": "H:\\Project\\OSM\\OSM.Model\\OSM.Model.csproj"
             }
           }
         }
