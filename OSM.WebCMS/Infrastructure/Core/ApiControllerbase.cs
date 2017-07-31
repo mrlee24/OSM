@@ -20,23 +20,22 @@ namespace OSM.WebCMS.Infrastructure.Core
         
         protected HttpResponseMessage CreateHttpResponse(HttpRequestMessage requestMessage, Func<HttpResponseMessage> function)
         {
-            HttpResponseMessage requestMessage = null;
+            HttpResponseMessage response = null;
             try
             {
-                requestMessage = function.Invoke();
+                response = function.Invoke();
             }
             catch (DbUpdateException dbEx)
             {
                 LogError(dbEx);
-                //requestMessage = requestMessage.CreateResponse(HttpStatusCode.BadRequest, dbEx.InnerException.Message);
-                return BadRequest(ModelState);
+                response = requestMessage.Crea(HttpStatusCode.BadRequest, dbEx.InnerException.Message);
             }
             catch (Exception ex)
             {
                 LogError(ex);
                 //response = requestMessage.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
             }
-            return requestMessage;
+            return response;
         } 
 
         private void LogError(Exception ex)

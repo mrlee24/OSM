@@ -5,3 +5,10 @@ H:\Projects\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.csprojResolveAssembl
 H:\Projects\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.AssemblyInfo.cs
 H:\Projects\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.dll
 H:\Projects\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.pdb
+H:\Project\OSM\OSM.Model\bin\Debug\netcoreapp1.1\OSM.Model.deps.json
+H:\Project\OSM\OSM.Model\bin\Debug\netcoreapp1.1\OSM.Model.dll
+H:\Project\OSM\OSM.Model\bin\Debug\netcoreapp1.1\OSM.Model.pdb
+H:\Project\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.csprojResolveAssemblyReference.cache
+H:\Project\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.AssemblyInfo.cs
+H:\Project\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.dll
+H:\Project\OSM\OSM.Model\obj\Debug\netcoreapp1.1\OSM.Model.pdb
