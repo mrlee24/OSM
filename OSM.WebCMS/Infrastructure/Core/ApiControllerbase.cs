@@ -28,12 +28,12 @@ namespace OSM.WebCMS.Infrastructure.Core
             catch (DbUpdateException dbEx)
             {
                 LogError(dbEx);
-                response = requestMessage.Crea(HttpStatusCode.BadRequest, dbEx.InnerException.Message);
+                response = requestMessage.CreateResponse(HttpStatusCode.BadRequest, dbEx.InnerException.Message);
             }
             catch (Exception ex)
             {
                 LogError(ex);
-                //response = requestMessage.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+                response = requestMessage.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
             }
             return response;
         } 
