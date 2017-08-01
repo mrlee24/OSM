@@ -8,6 +8,7 @@ using OSM.WebCMS.Infrastructure.Core;
 
 namespace OSM.WebCMS.Api
 {
+    /*
     [Produces("application/json")]
     [Route("api/ProductCategory")]
     public class ProductCategoryController : ApiControllerBase
@@ -44,4 +45,5 @@ namespace OSM.WebCMS.Api
         {
         }
     }
+    */
 }

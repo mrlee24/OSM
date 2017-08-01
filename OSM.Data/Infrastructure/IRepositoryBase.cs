@@ -1,31 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
 using System.Linq.Expressions;
 
 namespace OSM.Data.Infrastructure
 {
-    public interface IRepositoryBase<T> where T: class, new()
+    public interface IRepositoryBase<T> where T : class
     {
-        IQueryable<T> All<T>() where T : class;
-        void Create<T>(T TObject) where T : class;
-        void Delete<T>(T TObject) where T : class;
-        void Delete<T>(Expression<Func<T, bool>> predicate)
-        where T : class;
-        void Update<T>(T TObject) where T : class;
-        void ExecuteProcedure(string procedureCommand,
-        params SqlParameter[] sqlParams);
-        IEnumerable<T> Filter<T>(Expression<Func<T, bool>> predicate)
-        where T : class;
-        IEnumerable<T> Filter<T>(Expression<Func<T, bool>> filter,
-        out int total, int index = 0, int size = 50)
-        where T : class;
-        T Find<T>(Expression<Func<T, bool>> predicate)
-        where T : class;
-        T Single<T>(Expression<Func<T, bool>> expression)
-        where T : class;
-        bool Contains<T>(Expression<Func<T, bool>> predicate)
-        where T : class;
+        void Add(T entity);
+        IEnumerable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties);
+        int Count();
+        void Delete(int id);
+        void Delete(T entity);
+        void DeleteMulti(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(string[] includes = null);
+        IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null);
+        IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50, string[] includes = null);
+        T GetSingle(Expression<Func<T, bool>> predicate);
+        T GetSingle(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
+        T GetSingle(int id);
+        void Save();
+        void Update(T entity);
     }
 }

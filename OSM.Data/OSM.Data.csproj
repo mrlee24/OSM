@@ -12,8 +12,4 @@
     <ProjectReference Include="..\OSM.Model\OSM.Model.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Respositories\" />
-  </ItemGroup>
-
 </Project>
