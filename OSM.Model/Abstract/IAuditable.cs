@@ -16,6 +16,6 @@ namespace OSM.Model.Abstract
 
         string MetaDescription { get; set; }
 
-        bool Status { get; set; }
+        int State { get; set; }
     }
 }

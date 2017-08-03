@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using OSM.WebCMS.Models;
 using OSM.WebCMS.Models.AccountViewModels;
 using OSM.WebCMS.Services;
+using OSM.Model.Entities;
 
 namespace OSM.WebCMS.Controllers
 {

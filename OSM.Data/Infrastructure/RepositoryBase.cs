@@ -8,36 +8,47 @@ using System.Text;
 
 namespace OSM.Data.Infrastructure
 {
-    public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
+    public class RepositoryBase : IRepositoryBase
     {
         AppsDbContext _context;
         public RepositoryBase(IDbFactory dbFactory)
         {
             _context = dbFactory.GetDataContext;
         }
-        public virtual void Add(T entity)
+        public IQueryable<T> All<T>() where T : class
         {
-            _context.Add()Entity;
+            return _context.Set<T>().AsQueryable();
         }
-        public virtual void Update(T entity)
+        public virtual void Add<T>(T entity) where T : class
         {
-            _context.Set<T>().Update(entity);
+            var newEntry = _context.Add(entity);
         }
-
-        public virtual void Delete(T entity)
+        public virtual void Update<T>(T entity) where T : class
+        {
+            try
+            {
+                var entry = _context.Entry(entity);
+                _context.Set<T>().Attach(entity);
+                entry.State = EntityState.Modified;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public virtual void Delete<T>(T entity) where T : class
         {
             _context.Set<T>().Remove(entity);
         }
-
-        public void Delete(int id)
+        public void Delete<T>(int id) where T : class
         {
-            var entity = GetSingle(id);
+            var entity = GetSingle<T>(id);
 
             if (entity == null) return;
 
             Delete(entity);
         }
-        public void DeleteMulti(Expression<Func<T, bool>> predicate)
+        public void DeleteMulti<T>(Expression<Func<T, bool>> predicate) where T : class
         {
             IEnumerable<T> entities = _context.Set<T>().Where(predicate);
 
@@ -46,7 +57,7 @@ namespace OSM.Data.Infrastructure
                 _context.Entry<T>(entity).State = EntityState.Deleted;
             }
         }
-        public IEnumerable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties)
+        public IEnumerable<T> AllIncluding<T>(params Expression<Func<T, object>>[] includeProperties) where T : class
         {
             IQueryable<T> query = _context.Set<T>();
             foreach (var includeProperty in includeProperties)
@@ -55,31 +66,27 @@ namespace OSM.Data.Infrastructure
             }
             return query.AsEnumerable();
         }
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll<T>() where T : class
         {
             return _context.Set<T>().AsEnumerable();
         }
-
-        public IEnumerable<T> GetAll(string[] includes = null)
+        public IEnumerable<T> GetAll<T>(string[] includes = null) where T : class
         {
             throw new NotImplementedException();
         }
-
-        public T GetSingle(int id)
+        public T GetSingle<T>(int id) where T : class
         {
             // kiem tra ham EntityBase
             //  return _context.Set<T>().FirstOrDefault(x => x.Id == id);
             return _context.Set<T>().Find(id);
         }
-
         //  200
-        public T GetSingle(Expression<Func<T, bool>> predicate)
+        public T GetSingle<T>(Expression<Func<T, bool>> predicate) where T : class
         {
             return _context.Set<T>().FirstOrDefault(predicate);
         }
-
         //  200
-        public T GetSingle(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
+        public T GetSingle<T>(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties) where T : class
         {
             IQueryable<T> query = _context.Set<T>();
 
@@ -91,7 +98,7 @@ namespace OSM.Data.Infrastructure
             return query.Where(predicate).FirstOrDefault();
         }
         //200
-        public IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null)
+        public IEnumerable<T> GetMulti<T>(Expression<Func<T, bool>> predicate, string[] includes = null) where T : class
         {
             if (includes != null && includes.Count() > 0)
             {
@@ -103,7 +110,7 @@ namespace OSM.Data.Infrastructure
 
             return _context.Set<T>().Where<T>(predicate).AsQueryable<T>();
         }
-        public IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50, string[] includes = null)
+        public IEnumerable<T> GetMultiPaging<T>(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50, string[] includes = null) where T : class
         {
             int skipCount = index * size;
             var _resetSet = filter != null ? _context.Set<T>
@@ -114,17 +121,21 @@ namespace OSM.Data.Infrastructure
             total = _resetSet.Count();
             return _resetSet.AsQueryable();
         }
-        public int Count()
+        public int Count<T>() where T : class
         {
             return _context.Set<T>().Count();
         }
-        public IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate)
+        public IEnumerable<T> FindBy<T>(Expression<Func<T, bool>> predicate) where T : class
         {
-            return _context.Set<T>().Where(predicate);
+            return _context.Set<T>().Where<T>(predicate).AsQueryable<T>();
         }
-        public void Save()
+        public virtual void ExecuteProcedure(String procedureCommand, params SqlParameter[] sqlParams)
         {
-            _context.SaveChanges();
+            _context.Database.ExecuteSqlCommand(procedureCommand, sqlParams);
+        }
+        public bool Contains<T>(Expression<Func<T, bool>> predicate) where T : class
+        {
+            return _context.Set<T>().Count<T>(predicate) > 0;
         }
         /*
         public T Get(int id)

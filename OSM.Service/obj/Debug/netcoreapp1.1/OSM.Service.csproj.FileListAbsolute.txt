@@ -11,3 +11,16 @@ H:\Projects\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.csprojResolveAss
 H:\Projects\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.AssemblyInfo.cs
 H:\Projects\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.dll
 H:\Projects\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.pdb
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Service.deps.json
+H:\Project\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.csprojResolveAssemblyReference.cache
+H:\Project\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.AssemblyInfo.cs
+H:\Project\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.dll
+H:\Project\OSM\OSM.Service\obj\Debug\netcoreapp1.1\OSM.Service.pdb
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Service.dll
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Service.pdb
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Common.dll
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Data.dll
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Model.dll
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Common.pdb
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Data.pdb
+H:\Project\OSM\OSM.Service\bin\Debug\netcoreapp1.1\OSM.Model.pdb

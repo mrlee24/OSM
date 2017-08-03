@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using OSM.WebCMS.Models;
 using OSM.WebCMS.Models.ManageViewModels;
-using OSM.WebCMS.Services;
+using OSM.Model.Entities;
+using OSM.Services;
 
 namespace OSM.WebCMS.Controllers
 {

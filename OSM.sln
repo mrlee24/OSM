@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSM.Data", "OSM.Data\OSM.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSM.Service", "OSM.Service\OSM.Service.csproj", "{5B783793-6CCB-4448-AAE3-CFF165DB13DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSM.WebCMS", "OSM.WebCMS\OSM.WebCMS.csproj", "{ADB6DA6D-587D-4B63-8303-3607E4B19352}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSM.WebCMS", "OSM.WebCMS\OSM.WebCMS.csproj", "{8979A6D8-C317-428B-ADF4-3C2F27283ECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{5B783793-6CCB-4448-AAE3-CFF165DB13DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B783793-6CCB-4448-AAE3-CFF165DB13DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B783793-6CCB-4448-AAE3-CFF165DB13DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADB6DA6D-587D-4B63-8303-3607E4B19352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADB6DA6D-587D-4B63-8303-3607E4B19352}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADB6DA6D-587D-4B63-8303-3607E4B19352}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADB6DA6D-587D-4B63-8303-3607E4B19352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8979A6D8-C317-428B-ADF4-3C2F27283ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8979A6D8-C317-428B-ADF4-3C2F27283ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8979A6D8-C317-428B-ADF4-3C2F27283ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8979A6D8-C317-428B-ADF4-3C2F27283ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

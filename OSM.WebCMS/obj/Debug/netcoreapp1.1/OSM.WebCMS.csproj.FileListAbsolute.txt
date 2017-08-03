@@ -1,13 +1,11 @@
-H:\Projects\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.deps.json
-H:\Projects\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.runtimeconfig.json
-H:\Projects\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.runtimeconfig.dev.json
-H:\Projects\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.csprojResolveAssemblyReference.cache
-H:\Projects\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
-H:\Projects\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.AssemblyInfo.cs
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.deps.json
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.runtimeconfig.json
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.runtimeconfig.dev.json
+H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.csprojResolveAssemblyReference.cache
+H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.AssemblyInfo.cs
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.dll
+H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.WebCMS.pdb
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Common.dll
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Data.dll
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Model.dll
@@ -16,5 +14,5 @@ H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Common.pdb
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Data.pdb
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Model.pdb
 H:\Project\OSM\OSM.WebCMS\bin\Debug\netcoreapp1.1\OSM.Service.pdb
-H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.csprojResolveAssemblyReference.cache
-H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.AssemblyInfo.cs
+H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.dll
+H:\Project\OSM\OSM.WebCMS\obj\Debug\netcoreapp1.1\OSM.WebCMS.pdb
