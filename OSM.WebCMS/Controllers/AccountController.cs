@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using OSM.WebCMS.Models.AccountViewModels;
-using OSM.WebCMS.Services;
 using OSM.Model.Entities;
+using OSM.Services;
 
 namespace OSM.WebCMS.Controllers
 {
