@@ -6,25 +6,26 @@ using System.Linq.Expressions;
 
 namespace OSM.Data.Infrastructure
 {
-    public interface IRepositoryBase
+    public interface IRepositoryBase<T> where T : class, new()
     {
-        IQueryable<T> All<T>() where T : class;
-        void Add<T>(T entity) where T: class;
-        IEnumerable<T> AllIncluding<T>(params Expression<Func<T, object>>[] includeProperties) where T : class;
-        int Count<T>() where T : class;
-        void Delete<T>(int id) where T : class;
-        void Delete<T>(T entity) where T : class;
-        void DeleteMulti<T>(Expression<Func<T, bool>> predicate) where T : class;
-        IEnumerable<T> FindBy<T>(Expression<Func<T, bool>> predicate) where T : class;
-        IEnumerable<T> GetAll<T>() where T : class;
-        IEnumerable<T> GetAll<T>(string[] includes = null) where T : class;
-        IEnumerable<T> GetMulti<T>(Expression<Func<T, bool>> predicate, string[] includes = null) where T : class;
-        IEnumerable<T> GetMultiPaging<T>(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50, string[] includes = null) where T : class;
-        T GetSingle<T>(Expression<Func<T, bool>> predicate) where T : class;
-        T GetSingle<T>(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties) where T : class;
-        T GetSingle<T>(int id) where T : class;
-        void Update<T>(T entity) where T : class;
+        IQueryable<T> All();
+        void Add(T entity);
+        IEnumerable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties);
+        int Count() ;
+        void Delete(int id);
+        void Delete(T entity);
+        void DeleteMulti(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(string[] includes = null);
+        IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null);
+        IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50, string[] includes = null);
+        T GetSingle(Expression<Func<T, bool>> predicate);
+        T GetSingle(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
+        T GetSingle(int id);
+        void Update(T entity);
         void ExecuteProcedure(String procedureCommand, params SqlParameter[] sqlParams);
-        bool Contains<T>(Expression<Func<T, bool>> predicate) where T : class;
+        bool Contains(Expression<Func<T, bool>> predicate);
+        void Commit();
     }
 }

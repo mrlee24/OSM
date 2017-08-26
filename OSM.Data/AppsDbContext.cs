@@ -37,11 +37,11 @@ namespace OSM.Data
         }
 
         //This will select your start-up project migrations assembly to OSM.Data
-        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
-        {
-            string connection = "Data Source=USER\\SQLEXPRESS;Initial Catalog=OSM;Integrated Security=True;Pooling=False";
-            optionBuilder.UseSqlServer(connection, x => x.MigrationsAssembly("OSM.Data"));
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        //{
+        //    string connection = "Data Source=USER\\SQLEXPRESS;Initial Catalog=OSM;Integrated Security=True;Pooling=False";
+        //    optionBuilder.UseSqlServer(connection, x => x.MigrationsAssembly("OSM.Data"));
+        //}
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

@@ -8,8 +8,8 @@ using OSM.Data;
 namespace OSM.Data.Migrations
 {
     [DbContext(typeof(AppsDbContext))]
-    [Migration("20170726084922_hahah123")]
-    partial class hahah123
+    [Migration("20170826023820_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

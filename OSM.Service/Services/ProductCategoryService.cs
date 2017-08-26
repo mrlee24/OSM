@@ -76,7 +76,7 @@ namespace OSM.Service
 
         public void Save()
         {
-            _ProductCategoryRepository.Save();
+            _ProductCategoryRepository.Commit();
             _unitOfWork.CommitTransaction();
         }
     }

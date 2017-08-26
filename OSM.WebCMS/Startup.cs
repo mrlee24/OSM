@@ -35,9 +35,10 @@ namespace OSM.WebCMS
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string conntection = "Data Source=USER\\SQLEXPRESS;Initial Catalog=OSM;Integrated Security=True;Pooling=False";
             // Add framework services.
             services.AddDbContext<AppsDbContext>(options =>
-                options.UseSqlServer("Data Source=USER\\SQLEXPRESS;Initial Catalog=OSM;Integrated Security=True;Pooling=False", b => b.MigrationsAssembly("OSM.Data")));
+                options.UseSqlServer(conntection, b => b.MigrationsAssembly("OSM.Data")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppsDbContext>()

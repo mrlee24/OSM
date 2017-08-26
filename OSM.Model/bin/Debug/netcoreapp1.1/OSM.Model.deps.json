@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "d1cc2258b32bee2fe6213d5b9393ebaff7c808d0"
+    "signature": "ac3247a03e2a52c93f5c129af774092d0cc8a363"
   },
   "compilationOptions": {},
   "targets": {
@@ -193,7 +193,8 @@
       "microsoft.entityframeworkcore.relational/1.1.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.1.2",
-          "System.Data.Common": "4.3.0"
+          "System.Data.Common": "4.3.0",
+          "System.Diagnostics.DiagnosticSource": "4.3.1"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.dll": {}
@@ -390,6 +391,7 @@
       "system.data.sqlclient/4.3.1": {
         "dependencies": {
           "System.Data.Common": "4.3.0",
+          "System.Diagnostics.DiagnosticSource": "4.3.1",
           "System.IO.Pipes": "4.3.0",
           "System.Text.Encoding.CodePages": "4.3.0",
           "runtime.native.System.Data.SqlClient.sni": "4.3.0"
@@ -408,6 +410,11 @@
       "system.diagnostics.contracts/4.3.0": {
         "runtime": {
           "lib/netstandard1.0/System.Diagnostics.Contracts.dll": {}
+        }
+      },
+      "system.diagnostics.diagnosticsource/4.3.1": {
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
       "system.interactive.async/3.0.0": {
@@ -783,6 +790,13 @@
       "sha512": "sha512-eelRRbnm+OloiQvp9CXS0ixjNQldjjkHO4iIkR5XH2VIP8sUB/SIpa1TdUW6/+HDcQ+MlhP3pNa1u5SbzYuWGA==",
       "path": "system.diagnostics.contracts/4.3.0",
       "hashPath": "system.diagnostics.contracts.4.3.0.nupkg.sha512"
+    },
+    "system.diagnostics.diagnosticsource/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j72A3mwamUXPgDIU1TWyzea7yqz59+iO2cmXuyzvcfuszWGq9JRbWify1k33lLQophaXOIyhPkEevfP0k4M3wg==",
+      "path": "system.diagnostics.diagnosticsource/4.3.1",
+      "hashPath": "system.diagnostics.diagnosticsource.4.3.1.nupkg.sha512"
     },
     "system.interactive.async/3.0.0": {
       "type": "package",

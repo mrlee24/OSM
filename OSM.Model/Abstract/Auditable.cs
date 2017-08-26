@@ -4,15 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OSM.Model.Abstract
 {
-    public abstract class Auditable : IAuditable
+    public class Auditable : IAuditable
     {
-        public Auditable()
-        {
-            this.CreatedDate = DateTime.Now;
-            this.UpdatedDate = DateTime.Now;
-            this.State = (int)EntityState.New;
-        }
-
         [MaxLength(250)]
         public string CreatedBy { get; set; }
 
@@ -29,12 +22,6 @@ namespace OSM.Model.Abstract
         [MaxLength(250)]
         public string MetaDescription { get; set; }
 
-        [NotMapped]
-        public int State { get; set; }
-
-        public enum EntityState
-        {
-            New = 1, Update = 2, Delete = 3, Ignore = 4
-        }
+        public bool Status { get; set; }
     }
 }
